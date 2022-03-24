@@ -16,4 +16,9 @@ class libro:
   def mostrarLibro(self):
     print("n\Titulo: "+ self.setTitulo()+"n\Autor: "+self.setAutor()+"n\Genero: "+ self.setGenero()+"n\ISBN: "+str(self.setISBN()))
   
-titulo = input("Por favor ingrese el título ")
+titulo = raw_input("Por favor ingrese el título ")
+autor = raw_input("Por favor ingrese el autor ")
+genero = raw_input("Por favor ingrese el género ")
+ISBN = input("Por favor ingrese el ISBN ")
+l = Libro(titulo, autor, genero, ISBN)
+l.mostrarLibro
